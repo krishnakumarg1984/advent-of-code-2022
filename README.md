@@ -25,3 +25,6 @@ cargo +nightly run --release --bin bench
 Some solutions require Rust Nightly, that's why `+nightly` is included.
 
 [aoc-2022]: https://adventofcode.com/2022
+
+## Credits
+This is the fork of the Advent of Code 2021 template from the repository: https://github.com/timvisee/advent-of-code-2021
