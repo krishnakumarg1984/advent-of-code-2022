@@ -1,0 +1,2 @@
+https://stackoverflow.com/questions/65221920/how-do-i-read-a-string-from-a-file-split-it-and-create-a-vecstr-in-one-stat
+https://stackoverflow.com/questions/53459167/how-to-split-a-string-multiple-times-in-rust
