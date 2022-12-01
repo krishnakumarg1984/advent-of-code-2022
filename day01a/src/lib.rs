@@ -2,7 +2,6 @@ use std::{error::Error, fs};
 
 #[allow(clippy::missing_errors_doc)]
 pub fn run() -> Result<(), Box<dyn Error>> {
-    // let input_filename = "test_input.txt"; // the example given in the problem page
     let input_filename = "input.txt"; // unique input for my authenticated user handle
     let result = calculate_highest_cal(input_filename)?;
     let (idx_highest_cal_elf, highest_totalcals) = result;
@@ -38,14 +37,11 @@ mod tests {
     #![allow(unused_imports)]
     use super::*;
 
-    //     #[test]
-    //     fn one_result() {
-    //         let query = "duct";
-    //         let contents = "\
-    // Rust:
-    // safe, fast, productive.
-    // Pick three.";
-    //
-    //         assert_eq!(vec!["safe, fast, productive."], search(query, contents));
-    //     }
+    #[test]
+    fn example_result() {
+        let test_result = calculate_highest_cal("test_input.txt").unwrap();
+        let (test_idx_highest_cal_elf, test_highest_totalcals) = test_result;
+        assert_eq!(test_idx_highest_cal_elf, 3);
+        assert_eq!(test_highest_totalcals, 24000);
+    }
 }

@@ -2,8 +2,6 @@ use std::{collections::BinaryHeap, error::Error, fs};
 
 #[allow(clippy::missing_errors_doc)]
 pub fn run() -> Result<(), Box<dyn Error>> {
-    // let input_filename = "test_input.txt"; // the example given in the problem page
-
     let input_filename = "input.txt"; // unique input for my authenticated user handle
 
     let n = 3; // use the top 3 elves with the highest calories of food
@@ -50,14 +48,8 @@ mod tests {
     #![allow(unused_imports)]
     use super::*;
 
-    //     #[test]
-    //     fn one_result() {
-    //         let query = "duct";
-    //         let contents = "\
-    // Rust:
-    // safe, fast, productive.
-    // Pick three.";
-    //
-    //         assert_eq!(vec!["safe, fast, productive."], search(query, contents));
-    //     }
+    #[test]
+    fn example_result() {
+        assert_eq!(45000, compute_top_elf_cals("test_input.txt", 3).unwrap());
+    }
 }
